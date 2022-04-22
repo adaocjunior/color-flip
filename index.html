@@ -8,16 +8,31 @@
     <title>Document</title>
 </head>
 <body id="body" onload="selectColor()">
+    <header>
+        <div id="headerContent">
+            <h1>Color Flipper</h1>
+        </div>
+    </header>
     <div id="pageContent">
         <div id="colorName">
-            <h2>The current color is:</h2>
-            <h2 id="showColor"></h2>
+                <h2 class="colorText">The current color is:</h2>
+                <h2 class="colorText" id="showColor"></h2>
         </div>
         <div id="colorButtons">
-            <button onclick="changeToPreviousColor()">Previous Color</button>
-            <button onclick="selectColor()">Change Color</button>         
+            <button class="colorButtons" onclick="previousColor()">Previous Color</button>
+            <button class="colorButtons" onclick="selectColor()">Change Color</button>         
         </div>
     </div>
+
+    <footer id="pageFooter">
+        <div id="footerContent">
+            <div id="social">
+                <a class="socialLinks" id="linkedin" href="https://www.linkedin.com/in/adao-junior8678/">Linkedin</a>-
+                <a class="socialLinks" id="github" href="https://github.com/adaocjunior">Github</a>
+                <p id="copyright">Adão Júnior - 2022</p>
+            </div>
+        </div>
+    </footer>
     <script src="index.js"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@ const body = document.getElementById('body');
 
 let letters = '1234567890abcdef';
 let color = '#';
-let previousColor = []
+let savePreviousColor = []
 
 function selectColor(){
     for (let i = 0; i < 6; i++){
@@ -11,16 +11,12 @@ function selectColor(){
     }
     body.style.backgroundColor = color;
     showColor.innerText = color;
-    previousColor.push(color)
+    savePreviousColor.push(color)
     color = '#';
 }
 
+function previousColor(){
 
-function teste(){
-    let teste = previousColor.length
-    body.style.backgroundColor = teste - 1
-    if (previousColor.length == 0){
-        body.style.backgroundColor = previousColor[0]
-    }
-
+    body.style.backgroundColor  
 }
+
